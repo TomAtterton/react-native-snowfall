@@ -1,15 +1,15 @@
 import { ImageBackground, StyleSheet, View } from 'react-native';
-import { SnowFall } from 'react-native-snowfall';
+import { Snowfall } from 'react-native-snowfall';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('./background.png')}
+        source={require('../assets/background.png')}
         resizeMode="cover"
         style={StyleSheet.absoluteFill}
       />
-      <SnowFall />
+      <Snowfall />
     </View>
   );
 }

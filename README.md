@@ -1,6 +1,9 @@
+
 # react-native-snowfall 🌨️
 
-An animated snowy background using Reanimated and Skia Atlas.
+
+`react-native-snowfall` is a library that provides an animated snowy background for your React Native applications. It utilizes the Reanimated and Skia Atlas libraries to create a smooth and efficient snow effect.
+
 
 ![npm](https://img.shields.io/npm/v/react-native-snowfall)
 ![GitHub issues](https://img.shields.io/github/issues/tomatterton/react-native-snowfall)
@@ -9,8 +12,10 @@ An animated snowy background using Reanimated and Skia Atlas.
 
 ## Installation ❄️
 
+
+**yarn**
 ```sh
-npm install react-native-snowfall
+yarn add react-native-snowfall
 ```
 
 ### Peer Dependencies 🔗
@@ -18,21 +23,25 @@ npm install react-native-snowfall
 This library relies on the following peer dependencies. Make sure they are installed in your project:
 
 ```sh
-npm install react-native-reanimated @shopify/react-native-skia
+yarn add react-native-reanimated @shopify/react-native-skia
 ```
+
+## Demo 💫
+
+![Demo GIF](./assets/demo.gif)
 
 ## Usage 🎨
 
 ```jsx
 import React from 'react';
 import { View } from 'react-native';
-import { SnowFall } from 'react-native-snowfall';
+import { Snowfall } from 'react-native-snowfall';
 
 const App = () => {
   return (
     <View style={{ flex: 1 }}>
       {/* Add the SnowFall component */}
-      <SnowFall />
+      <Snowfall />
       {/* Rest of your app components */}
     </View>
   );
@@ -43,17 +52,17 @@ export default App;
 
 ### Customization ✨
 
-You can customize the snowfall effect by passing props to the `SnowFall` component:
+You can customize the snowfall effect by passing props to the `Snowfall` component:
 
 ```jsx
 import React from 'react';
 import { View } from 'react-native';
-import { SnowFall } from 'react-native-snowfall';
+import { Snowfall } from 'react-native-snowfall';
 
 const App = () => {
   return (
     <View style={{ flex: 1 }}>
-      <SnowFall
+      <Snowfall
         count={100}
         duration={15000}
         minSize={5}

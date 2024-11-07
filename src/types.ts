@@ -1,6 +1,6 @@
 import type { DataSourceParam, SkImage } from '@shopify/react-native-skia';
 
-export interface SnowFallProps {
+export interface SnowfallProps {
   count?: number;
   duration?: number;
   minSize?: number;
