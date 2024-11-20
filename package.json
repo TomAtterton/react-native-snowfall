@@ -1,6 +1,6 @@
 {
   "name": "react-native-snowfall",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An animated snowy background using reanimated and Skia Atlas",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",

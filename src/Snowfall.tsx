@@ -57,6 +57,11 @@ const Snowfall = ({
     );
   }, [count, image]);
 
+  const imageWidth = useMemo(() => {
+    if (!image) return 0;
+    return image.width();
+  }, [image]);
+
   const transforms = useRSXformBuffer(count, (val, i) => {
     'worklet';
 
@@ -81,7 +86,7 @@ const Snowfall = ({
       [-50, screenHeight + (isAndroid ? 60 : 0)]
     );
     const rotation = particle.deltas.rotationSpeed * adjustedProgress;
-    const snowflakeSize = image.width() / imageScale;
+    const snowflakeSize = imageWidth / imageScale;
     const scale = particle.size / snowflakeSize;
 
     val.set(
